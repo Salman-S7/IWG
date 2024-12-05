@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "metro polis black";
+    src: url("../fonts/metropolis-black-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "metro polis regular";
+    src: url("../fonts/metropolis-regular-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "opinionpro semi bold";
+    src: url("../fonts/opinion_pro_semibold-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "opinionpro extra cond lt";
+    src: url("../fonts/mint_type_-_opinion_pro_extracondensed_light-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "opinion pro reg";
+    src: url(../fonts/opinion_pro_regular-webfont.woff) format(woff);
+}
+@font-face {
+    font-family: "averta regular";
+    src: url(../fonts/AvertaCY-Regular.woff2) format(woff2);
+}
+@font-face {
+    font-family: "metropolis extra condensed";
+    src: url(../fonts/mint_type_-_opinion_pro_condensed_lightitalic-webfont.woff) format("woff");
+}

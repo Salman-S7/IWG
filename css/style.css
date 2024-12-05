@@ -1,0 +1,414 @@
+@import url(./fonts.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+.navbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 6vh;
+    width: 100vw;
+}
+.logo{
+    position: relative;
+    left: 5.8vw;
+    top: 50%;
+}
+#canvas{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    
+}
+body{
+    background-color: black;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 250px;
+    width: auto;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+}
+svg{
+    height: 100%;
+    width: 100%;
+}
+.i-letter {
+    height: 50vh;
+    width: 33.33%;
+    /* background-color: aquamarine; */
+    position: fixed;
+    left: -5%;
+    top: 24%;
+}
+
+.w-letter {
+    height: 50vh;
+    width: 33.33%;
+    /* background-color: aquamarine; */
+    position: fixed;
+    left: 30vw;
+    top: 24vh;
+}
+.g-letter {
+    height: 50vh;
+    width: 33.33%;
+    /* background-color: aquamarine; */
+    position: fixed;
+    right: 3.5vw;
+    top: 24vh;
+}
+.box img, .box1 img{
+    height: 100%;
+   animation: bounce2 1s ease-in-out alternate infinite;
+}
+@keyframes bounce2 {
+  from{
+      transform: translateY(0);
+  }
+  to{
+      transform: translateY(30px);
+  }
+}
+
+
+/* mouse effect */
+.mouse {
+    width: 100px;
+    position: absolute;
+    bottom: 6%;
+    left: 48%;
+    display: flex;
+    transform: translate(-18%, 0%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mouse p{
+    color: #fff;
+    text-align: center;
+    font-size: 1.04vw;
+    font-family: "metropolis extra condensed";}
+.mouse-icon {
+    width: 35px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+.mouse-wheel{
+  height: 6px;
+  margin: 2px auto 0;
+  display: block;
+  width: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-animation: 2s ease infinite wheel-up-down;
+ -moz-animation: 2s ease infinite wheel-up-down;
+  animation: 2s ease infinite wheel-up-down;
+}
+
+
+@keyframes wheel-up-down {
+	0% {
+	    margin-top: 20px;
+	    opacity: 0;
+	}
+	30% {
+	    opacity: 1;
+	}
+	100% {
+	    margin-top: 40px;
+	    opacity: 0;
+	}
+}
+/* hero-section */
+.hero-section{
+    height: 100vh;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "metro polis black";
+    position: relative;
+}
+
+.box1 {
+    width: 8vw;
+    height: auto;
+}
+.box1 img{
+    height: 100%;
+    width: 100%;
+}
+.hero-text-01{
+    font-family: "metro polis black";
+    font-size: xxx-large;
+}
+.hero-text-02 {
+    font-family: "metro polis regular";
+    padding-bottom: 0.5vw;
+}
+.hero-section a {
+    border: 2px solid #3a3ada;
+    color: white;
+    text-decoration: none;
+    padding: 1.5vh 5%;
+    background-color: #3a3ada;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.hero-section a:hover{
+    background-color: #000;
+}
+
+/* sec 02 */
+.sec-02{
+    padding: 0 5.8vw;
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+    width: 99vw;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.sec-02-head{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 20vh;
+    color: #fff;
+}
+.head-01{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+ 
+}
+
+
+.head-01 h1{
+    font-family: "opinionpro semi bold";
+    font-size: 5vw;
+}
+.head-01 p{
+    font-family: "opinionpro extra cond lt";
+    font-size: 5vw;
+}
+.head-02{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    gap: 7%;
+}
+.sec-02-head-para{
+    font-family: "opinion pro reg";
+    font-size: 1.04vw;
+    opacity: 0.5;
+}
+.get-started-btn {
+    font-family: "opinionpro semi bold";
+    color: white;
+    text-decoration: none;
+    /* border: ; */
+    background: linear-gradient(-45deg, transparent 5%, #3a3ada 5%);
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.get-started-btn:hover{
+    /* background:#000; */
+    background: linear-gradient(-45deg, transparent 5%, #000 5%);
+    
+}
+.videos-01{
+    height: 100vh;
+    width: 100%;
+}
+.videos-01 iframe{
+    height: 100%;
+    width: 100%;
+}
+
+/* section 03 */
+.sec-03{
+    margin-top: 20vh;
+    height: 125vh;
+    width: 100%;
+    color: #fff;
+    padding: 0 5.8vw;
+    display: flex;
+    flex-direction: column;
+
+}
+.sec-03-head{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 15vh;
+}
+.sec-03-p1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+}
+.sec-03-p1 h1{
+    font-family: "opinionpro semi bold";
+    font-size: 3.5vw;
+}
+.sec-03-p1 p{
+    font-family: "opinion pro reg";
+    font-size: 0.9vw;
+    opacity: 0.5;
+}
+.sec-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6%;
+    height: 67%;
+    background-color: #3a3ada;
+    border-radius: 0 50px 0 0;
+   
+}
+.sec-03-video{
+    height: 100vh;
+    width: 100%;
+}
+.sec-03-video iframe{
+    height: 100%;
+    width: 100%;
+}
+/* videos */
+.vids {
+    height: 100vh;
+    width: 99vw;
+    padding: 0 4.5vw;
+    display: flex;
+}
+.vp-center{
+    display: block !important;
+    align-items: center;
+    justify-content: center;
+}
+.v-1, .v-2{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.v-1 iframe{
+    display: block !important;
+    height: 100vh;
+    width: 90vw;
+    object-fit: cover;
+}
+.v-2-1, .v-2-2{
+    height: 50%;
+    width: 100%;
+}
+.v-2-1 iframe, .v-2-2 iframe{
+    height: 100%;
+    width: 100%;
+}
+
+/* footer */
+footer{
+    display: flex;
+    padding: 0 5.8vw;
+    height: 100vh;
+    width: 99vw;
+    flex-direction: column;
+    gap: 30vh;
+    color: #fff;
+    text-decoration: none;
+    font-family: "averta regular";
+}
+.footer-last a, .contact a{
+    color: #fff;
+    text-decoration: none;
+    font-family: "averta regular";
+    position: relative;
+    /* border-bottom: 1px solid; */
+}
+.contact{
+    padding-top: 20vh;
+    /* font-family: "opinionpro semi bold"; */
+    font-size: 2vw;
+}
+.contact a{
+    font-size: 3vw;
+    padding-top: 2vh;
+    /* color: #fff; */
+    /* font-family: "averta regular"; */
+}
+.contact a::before, .footer-last a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #ffffff;
+    transition: transform 0.33s ease;
+    transform: scaleX(1);
+    /* transition: transform 0.33s ease; */ 
+}
+/* .contact a::before {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+
+.contact a::after {
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+} */
+.contact a:hover::before, .footer-last a:hover:before {
+    transform: scaleX(0);
+}
+/* 
+.contact a:hover::after {
+    transform: scaleX(0);
+} */
+.footer-last{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.7vw;
+}
+.footer-last a:first-child{
+    height: fit-content;
+}
+.insta, .linkedin{
+    padding-top: 20vh;
+}
